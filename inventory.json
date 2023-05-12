@@ -1,0 +1,178 @@
+{
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "inventory ",
+          "_id": "box-10009",
+          "_score": 1,
+          "_source": {
+            "aware": {
+              "date": "2023-04-18T03:15:51.209869892Z",
+              "score": 0
+            },
+            "agent": [
+              {
+                "name": "Box Platform Agent",
+                "id": "Box Platform Agent"
+              }
+            ],
+            "@timestamp": "2023-04-18T03:15:51.209869892Z",
+            "system_boundary": {
+              "authorized": true,
+              "contain_pii": false,
+              "id": "id123"
+            },
+            "organization": {
+              "path": "Best",
+              "parent": "UNKNOWN",
+              "tier0_id": "Best subsidiary"
+            },
+            "host": {
+              "is_virtual": true,
+              "subcomponent": [
+                {
+                  "vendor": "AMD",
+                  "description": "AMD EPYC 7571"
+                }
+              ],
+              "hardware_name": "t3a.medium",
+              "hardware_inventory_update_date": "2023-03-21T23:59:00Z",
+              "type": "ENDPOINT - VIRTUAL",
+              "interface": [
+                {
+                  "corp_owned": true,
+                  "ip": "hidden",
+                  "name": "eth0"
+                }
+              ],
+              "operator": {
+                "user": {
+                  "id": "N/A"
+                }
+              },
+              "hostname": "some host name",
+             "first_found_date": "2023-03-21T04:00:00Z",
+              "managed": true,
+              "authorized": true,
+              "model": "UNKNOWN",
+              "id": "some-10009",
+              "manager": {
+                "user": {
+                  "id": "N/A"
+                }
+              },
+              "os": {
+                "os": "Linux CentOS Stream 8",
+                "kernel": "4.18.0-448.el8.x86_64",
+                "name": "Windows",
+                "family": "Windows",
+                "type": "windows",
+                "version": "4",
+                "configuration_benchmark": [],
+                "platform": "linux",
+                "full": "CentOS Stream 8"
+              },
+              "last_seen_date": "2023-03-21T23:59:00Z",
+              "has_antiexploit_software": false,
+              "has_security_software": false,
+              "processor": [
+                {
+                  "vendor": "AMD",
+                  "family": "Epyc"
+                }
+              ],
+              "version": "UNKNOWN",
+              "organization": {
+                "id": "cy-def"
+              },
+              "name": "boxName",
+              "hardware_management_covered": true,
+              "category": "ENDPOINT",
+              "software_inventory_covered": true,
+              "status": "ACTIVE"
+            },
+            "facility": {
+              "address": "123 Main Street",
+              "name": "Name",
+              "type": "HOSTING PROVIDER"
+            }
+          }
+        },
+        {
+          "_index": "inventory",
+          "_id": "box20202",
+          "_score": 1,
+          "_source": {
+            "aware": {
+              "date": "2023-01-07T00:15:18.434227424Z",
+              "score": 0,
+              "tolerance_adjusted_score": 0
+            },
+            "@timestamp": "2023-01-07T00:15:18.434227424Z",
+            "system_boundary": {
+              "authorized": true,
+              "contain_pii": false,
+              "id": "id456"
+            },
+            "organization": {
+              "path": "Next Best",
+              "parent": "UNKNOWN",
+              "tier1_id": "Next Best Subsidiary"
+            },
+            "@version": "1",
+            "host": {
+              "hardware_name": "Hardware Name",
+              "manager": {
+                "user": {
+                  "id": "N/A"
+                }
+              },
+              "last_seen": "2023-01-06T23:02:30.000Z",
+              "os": {
+                "name": "Fedora",
+                "family": "Linux",
+                "type": "linux",
+                "configuration_benchmark": [],
+                "platform": "Linux",
+                "full": "Fedora"
+              },
+              "has_security_software": false,
+              "hardware_inventory_update_date": "2023-01-06T23:02:30.000Z",
+              "type": "OTHER IO DEVICE",
+              "version": "-",
+              "operator": {
+                "user": {
+                  "id": "N/A"
+                }
+              },
+              "first_found_date": "2023-01-06T23:02:30.000Z",
+              "authorized": true,
+              "hardware_management_covered": false,
+              "id": "181116636",
+              "category": "OTHER IO DEVICE",
+              "architecture": "-",
+              "status": "ACTIVE"
+            },
+            "facility": {
+              "address": "123 Main Street",
+              "name": "facility name",
+              "id": "facility id"
+            }
+          }
+        }
+      ]
+    }
+  }
